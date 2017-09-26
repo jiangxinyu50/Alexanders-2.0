@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="亚历山达,亚历山达雪糕,亚历山达冰淇淋,雪糕冰淇淋,Alexander's,alexanders,alexander's,冰淇淋,冰棒,冰棍">
+    <meta name="description" content="每一口的喜悦，从亚历山达开始。亚历山达坚信，每一位消费者都拥有吃到安全、放心食品的权利，消费者不应每天为食品安全而提心吊胆。亚历山达绝对不添加任何人造香精、人造色素等雪糕制作过程中不必要的添加剂。亚历山达雪糕的味道、颜色都是由天然的原料直接得来。">
+    <meta name="author" content="Alexander's --Mr.Jiang">
+    <title>企业试吃</title>
+
+    <script type="text/javascript" src="../js/lib/jquery.min.js"></script>
+
+    <!-- The stylesheet -->
+    <link rel="stylesheet" href="../css/lib/base.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/lib/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/sky-forms.css" />
+    <!--[if lt IE 9]><link rel="stylesheet" href="css/sky-forms-ie8.css"><![endif]-->
+
+    <link rel="icon" type="image/png" href="../images/favicon.png" />
+
+    <style type="text/css">
+	   body{
+		  font-family: 'Open Sans',sans-serif,tahoma,arial;
+	   }
+       .description p{
+          font-size: 14px;
+       }
+       .form label{
+          font-size: 15px !important;
+       }
+    </style>
+
+</head>
+<body>
+<div name='breadcrumbs'>
+    <!-- Breadcrumbs v5 -->
+    <div class="breadcrumbs row">
+        <div class="container twelve col">
+            <h1 class="pull-left" style="width: 20%;">企业试吃申请</h1>
+        </div>
+    </div>
+</div>
+
+<div name="content">
+<div class="container">
+	<div class="row">
+		<div class="description six col">
+			<h2>相关说明：</h2>
+			<p>ALEXANDER'S雪糕企业试吃活动仅针对公司组织，不针对非公司组织的私人聚会。我们会从申请企业中挑选部分企业提供企业试吃服务，不保证提交申请的企业一定能享受ALEXANDER'S雪糕企业试吃活动。
+			</p>
+			<p style="font-weight: bold;">
+				申报活动条件：
+			</p>
+			<p>
+				1、贵公司从未参加过ALEXANDER'S举办的企业试吃活动；
+			</p>
+			<p>
+				2、贵公司有12-40人参与；
+			</p>
+			<p>
+				3、贵公司能提供茶水间、会议室或可供员工聚集的场地
+			</p>
+			<p>
+				4、您本人需全程参与，并协助ALEXANDER'S做好相应的雪糕试吃活动。
+			</p>
+            <p>如发生以下情况品鉴会将临时取消：</p>
+			<p>1、参加试吃人员未能按时到场或总人数少于12人。</p>
+			<p>2、未能提供合适的试吃场地。</p>
+			<p>3、因贵公司原因无法进行试吃活动。</p>
+            <p>*ALEXANDER'S（亚历山达）会对申请试吃的企业进行筛选，如果您的申请通过，我们会在7个工作日内与您联系。</p>
+           	<p><img src="../images/two-bar-codes.jpg" style="max-width:190px;"></p>
+		</div>
+		<div class="form six col">
+			<!-- Contacts -->
+                <form action="<{:U('Company/result')}>" method="post" id="eat-form" class="sky-form" target= "_blank">
+                    <h4 style="font-weight: bold;">请填写下列信息：</h4>
+                    
+                    <fieldset>
+                    	<section>
+                            <label class="label">您的公司全称：</label>
+                            <label class="input">
+                                <i class="icon-append fa fa-building-o"></i>
+                                <input type="text" name="companyName" id="companyName">
+                            </label>
+                        </section> 
+                        <label class="label">您的公司地址：</label> 
+                        <div class="row">
+                            <section class="col col-6">
+                                <label class="select">
+                                    <i class=""></i>
+                                    <select name='companyCity' id='companyCity'>
+                                        <option value="">城市</option>
+                                        <option value="深圳">深圳</option>
+                                        <option value="广州">广州</option>
+                                        <option value="成都">成都</option>
+                                    </select>
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="select">
+                                    <i class=""></i>
+                                    <select name='companyArea' id='companyArea'>
+                                        <option value="">区域</option>
+                                    </select>
+                                </label>
+                            </section>
+                        </div> 
+                        <section> 
+                            <label class="input">
+                                <i class="icon-append fa fa-location-arrow"></i>
+                                <input type="text" name="companyAddress" id="companyAddress">
+                            </label>
+                        </section> 
+                        <div class="row">
+                            <section class="col col-6">
+                                <label class="label">申请品尝的部门：</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-group"></i>
+                                    <input type="text" name="companyDepartment" id="companyDepartment">
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="label">活动参与人数：</label>
+                                <label class="select">
+                                    <i class=""></i>
+                                    <select name='eatPeople' id='eatPeople'>
+                                    	<option value="">请选择</option>
+	                                    <option value="12-20人">12-20人</option>
+	                                    <option value="21-30人">21-30人</option>
+	                                    <option value="31-40人">31-40人</option>
+	                                </select>
+                                </label>
+                            </section>
+                        </div>  
+                        <div class="row">
+                            <section class="col col-6">
+                                <label class="label">品尝时间段：</label>
+                                <label class="select">
+                                    <i class=""></i>
+                                    <select name='eatTimerand' id='eatTimerand'>
+                                    	<option value="">请选择</option>
+	                                    <option value="14:30 - 15:30">14:30 - 15:30</option>
+	                                    <option value="15:30 - 16:30">15:30 - 16:30</option>
+	                                </select>
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="label">公司潜在需求：</label>
+                                <label class="select">
+                                    <i class=""></i>
+                                    <select name='companyDemand' id='companyDemand'>
+                                    	<option value="">请选择</option>
+	                                    <option value="客户维护">客户维护</option>
+	                                    <option value="员工福利">员工福利</option>
+	                                    <option value="公司下午茶">公司下午茶</option>
+	                                </select>
+                                </label>
+                            </section>
+                        </div>             
+                        <div class="row">
+                            <section class="col col-6">
+                                <label class="label">您的姓名：</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-user"></i>
+                                    <input type="text" name="userName" id="userName">
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="label">您的职位：</label>
+                                <label class="input">
+                                    <i class="icon-append fa  fa-coffee"></i>
+                                    <input type="text" name="userPosition" id="userPosition">
+                                </label>
+                            </section>
+                        </div>
+                        <div class="row">
+                            <section class="col col-6">
+                                <label class="label">您的办公电话：</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-phone"></i>
+                                    <input type="text" name="userTel" id="userTel">
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="label">您的手机号码：</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-mobile"></i>
+                                    <input type="text" name="userMobile" id="userMobile">
+                                </label>
+                            </section>
+                        </div>
+
+                        <div class="row">
+                            <section class="col col-6">
+                                <label class="label">您的邮箱地址：</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-envelope"></i>
+                                    <input type="text" name="userEmail" id="userEmail">
+                                </label>
+                            </section>
+                        </div>
+                      
+                        
+                        <section>
+                            <label class="label">留言：</label>
+                            <label class="textarea">
+                                <i class="icon-append fa fa-pencil-square-o"></i>
+                                <textarea rows="4" name="userMessage" id="userMessage"></textarea>
+                            </label>
+                        </section>
+                    </fieldset>
+                    
+                    <footer>
+                        <button type="submit" class="btn-u btn-u-dark pull-right" style="width:24%;">立即申请</button>
+                    </footer>
+                </form>        
+                <!-- Contacts -->
+		</div>
+	</div>
+</div>
+</div>
+<br/>
+<hr style="border:1px solid #484848;width:80%;margin:0 auto;">           
+<p style="text-align:center;">Copyright &copy; 2014-<script>document.write(new Date().getFullYear());</script>   &nbsp;&nbsp;Alexander's Inc.  All Rights Reserved.</p> 
+</body>
+    
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/validation.js"></script>
+<script type="text/javascript">
+	    $(document).ready(function() {
+	        Validation.initValidation();
+	        });
+
+        $('#companyCity').on('change', function(){
+            $('#companyArea').empty();
+            $("#companyArea").append('<option value="">请选择</option>');
+            switch($(this).val()){
+                case '深圳':
+                    $("#companyArea").append('<option value="福田区">福田区</option>');
+                    $("#companyArea").append('<option value="南山区">南山区</option>');
+                    $("#companyArea").append('<option value="罗湖区">罗湖区</option>');
+                    break;
+                case '广州':
+                    $("#companyArea").append('<option value="天河区">天河区</option>');
+                    $("#companyArea").append('<option value="海珠区">海珠区</option>');
+                    $("#companyArea").append('<option value="越秀区">越秀区</option>');
+                    break;
+                case '成都':
+                    $("#companyArea").append('<option value="锦江区">锦江区</option>');
+                    $("#companyArea").append('<option value="武侯区">武侯区</option>');
+                    $("#companyArea").append('<option value="高新南区">高新南区</option>');
+                    break;
+            }
+        })
+	</script>
+</html>

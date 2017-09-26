@@ -1,0 +1,195 @@
+@charset "utf-8";
+/*Banner CSS Document */
+.apple-banner {
+	width: 100%;
+	height: 720px;
+	overflow: hidden;
+}
+
+.swiper-container {
+	margin-top: -40px;
+	width: 100%;
+	height: 800px;
+}
+
+.arrow-left {
+	position: absolute;
+	left: 0px;
+	top: 0;
+	width: 15%;
+	height: 100%;
+	z-index: 999;
+}
+
+.arrow-left span {
+	margin-top: -32px;
+	display: block;
+	left: 20px;
+	top: 50%;
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	border-radius: 100%;
+	background: rgba(180,180,180,0.25) url(../images/banner/arrows.png) no-repeat center 17px;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+}
+
+.arrow-left:hover span {
+	opacity: .6;
+}
+
+.arrow-right {
+	position: absolute;
+	right: 0px;
+	top: 0;
+	width: 15%;
+	height: 100%;
+	z-index: 999;
+}
+
+.arrow-right span {
+	margin-top: -32px;
+	display: block;
+	right: 20px;
+	top: 50%;
+	position: absolute;
+	width: 64px;
+	height: 64px;
+	border-radius: 100%;
+	background: rgba(180,180,180,0.25) url(../images/banner/arrows.png) no-repeat center -72px;
+	opacity: 0;
+	-webkit-transition: opacity 0.5s ease;
+	transition: opacity 0.5s ease;
+}
+
+.arrow-right:hover span {
+	opacity: .6;
+}
+
+.pagination {
+	position: absolute;
+	left: 0;
+	text-align: center;
+	bottom: 50px;
+	width: 100%;
+}
+
+.pagination li {
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	margin: 0 3px;
+	cursor: pointer;
+}
+
+.pagination li span {
+	width: 50px;
+	height: 2px;
+	display: block;
+	background: rgba(128,128,128,0.2);
+}
+
+.pagination li span i {
+	background: gray;
+	height: 2px;
+	display: block;
+	opacity: 0;
+}
+
+.pagination .current span i,.pagination .firstCurrent span i {
+	transition: all .5s ease;
+	opacity: 1;
+}
+
+.pagination .click span {
+	background: gray;
+}
+
+.pagination .click span i {
+	display: none;
+}
+
+.autoplay li span i {
+	transform: scaleX(0);
+	transform-origin: 0;
+	opacity: 1;
+}
+
+.autoplay .firstCurrent span i {
+	transform: scaleX(1);
+	transition: all 3s linear;
+}
+
+.autoplay .current span i {
+	transform: scaleX(1);
+	transition: all 4s linear;
+}
+
+.autoplay .replace span {
+	background: gray;
+}
+
+.autoplay .replace span i {
+	transform: scaleX(0);
+}
+/*内容样式*/
+
+.slide{
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.slide .title {
+	text-align: center;
+	margin-top: 120px;
+	font-size: 30px;
+	font-weight: normal;
+	color: #fff;
+}
+
+@media (max-width: 320px) and (min-width: 320px) {
+	.apple-banner {
+		height: 568px;
+	}
+	.pagination {
+    	bottom: 180px;
+	}
+}
+
+@media (max-width: 360px) and (min-width: 360px) {
+	.apple-banner {
+		height: 640px;
+	}
+	.pagination {
+    	bottom: 110px;
+	}
+}
+
+@media (max-width: 375px) and (min-width: 375px) {
+	.apple-banner {
+		height: 667px;
+	}
+	.pagination {
+    	bottom: 90px;
+	}
+}
+
+@media (max-width: 414px) and (min-width: 412px) {
+	.apple-banner {
+		height: 732px;
+	}
+	.pagination {
+    	bottom: 20px;
+	}
+}
+@media only screen and (max-width:1024px){
+	.arrow-left {
+		display: none;
+	}
+	.arrow-right {
+	    display: none;
+	}
+}

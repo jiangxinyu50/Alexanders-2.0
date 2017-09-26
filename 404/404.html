@@ -1,0 +1,65 @@
+<!--A 404 Page
+Author: Alexander's——Mr.Jiang
+Author URL: http://www.alexanders.com.cn
+-->
+<!DOCTYPE HTMl>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>抱歉，页面出错了</title>
+
+<link rel="icon" type="image/png" href="images/favicon.png" />
+<style type="text/css">
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,a,img{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+a{text-decoration:none;}
+img{max-width:100%;}
+body{font-family: 'Strait', sans-serif;background: #343434;}
+.wrap{height:100%;margin: 0 auto;position: relative;}
+.head{width: 100%;height: 70px;margin: 10px auto 0 auto;}
+.banner{width: 343px;margin: 100px auto 60px auto;}
+.back_index{width:134px;margin:50px auto 50px auto; position: relative;}
+.home{width: 133px;height: 59px;background: url("images/btn.jpg") no-repeat -452px -68px;border-radius: 22px;-webkit-border-radius: 22px;-moz-border-radius: 22px;}
+.copy{width: 300px;color: #FFFFFF;  margin: 0 auto;text-align: center;}
+.description{color:#fff;text-align: center;font-family: Microsoft YaHei;}
+</style>
+</head>
+<body>
+<script>
+function home(){
+  window.open('../index.html');
+}
+  </script>
+<body>
+	<div class="wrap">
+		<!--logo-->
+		<div class="head">
+        	<div  style="width:300px;margin:0 auto;">
+        		<img src="images/logo.png" alt="亚历山达冰淇淋" title="亚历山达冰淇淋" />
+        	</div>
+      	</div>
+        <!--404-->
+		<div class="banner"><img src="images/404.png" alt="抱歉，我们没有这个口味~" title="抱歉，我们没有这个口味~" /></div>
+        <!--description-->
+        <div class="description">
+          	<p>噢~非常抱歉，因为网络原因，我们出现了奇特的口味的冰淇淋。</p>
+          	<p>您可以点击下方按钮，回到主页浏览其它栏目。^_^</p>
+        </div>
+		<!--back index-->
+		<div class="back_index">
+          	<button name="home" id="home" class="home" onclick="home()" style="color:#fff;">返回主页</button>
+		</div>
+		<!-- freshen -->
+		<p style="text-align:center;color:#fff;margin-bottom:25px">或者尝试(F5快捷键)刷新一下</p>
+		<!--footer-->
+		<div class="copy">
+	    	<p>&copy; 2014-<script>document.write(new Date().getFullYear());</script> Alexander's Inc.</p>
+            <p> All rights reserved.</p>
+	    </div>
+	</div>
+	    	
+</body>
+</html>    
+
